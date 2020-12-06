@@ -1,7 +1,13 @@
-import './index.css'
+import "./index.css";
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Root from './root/Root'
+import React from "react";
+import ReactDOM from "react-dom";
+import Root from "./root/Root";
+import { BrowserRouter, Route } from "react-router-dom";
 
-ReactDOM.render(<Root />, document.getElementById('root'))
+ReactDOM.render(
+  <BrowserRouter>
+    <Route path="/" component={Root} />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
